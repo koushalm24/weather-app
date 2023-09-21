@@ -15,7 +15,7 @@ function WeatherApp() {
   let api_key = "ced627980493a6e1ccaf75c7a513610d";
 
   const [wicon, setWicon] = useState(clear_icon);
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
 
   const handleKeyDown = event => {
     if (event.key === 'Enter') {
@@ -42,14 +42,12 @@ function WeatherApp() {
     const condition = document.getElementsByClassName("condition");
 
     if (data.cod == 404) {
-      setVisible(false);
-
       location[0].innerHTML = "City Not Found !!";
       setWicon(error_icon);
 
     }
     else {
-
+      setVisible(true);
       humidity[0].innerHTML = data.main.humidity + "%";
       wind[0].innerHTML = data.wind.speed + "km/h";
       temperature[0].innerHTML = Math.floor(data.main.temp) + "°C";
