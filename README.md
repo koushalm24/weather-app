@@ -1,7 +1,10 @@
 # Weather App using React
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6e49060e-e91c-486a-adc6-923df7ceccb9/deploy-status)](https://app.netlify.com/sites/weatherappbykoushalm24/deploys)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![GitHub last commit](https://img.shields.io/github/last-commit/koushalm24/weather-app)
+
+Deployed Link : https://weatherappbykoushalm24.netlify.app/
 
 ## Project Overview
 
