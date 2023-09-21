@@ -1,6 +1,6 @@
 # Weather App using React
 
-![GitHub](https://img.shields.io/github/license/koushalm24/weather-app)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![GitHub last commit](https://img.shields.io/github/last-commit/koushalm24/weather-app)
 
 ## Project Overview
