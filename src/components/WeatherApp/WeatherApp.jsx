@@ -41,7 +41,9 @@ function WeatherApp() {
     const location = document.getElementsByClassName("weather-location");
     const condition = document.getElementsByClassName("condition");
 
-    if (data.cod == 404) {
+    if (data.cod === "404") {
+
+      setVisible(false);
       location[0].innerHTML = "City Not Found !!";
       setWicon(error_icon);
 
@@ -85,7 +87,7 @@ function WeatherApp() {
 
   return (
     <div className="container" >
-  
+
       <div className="top-bar">
         <input type="text" className="cityInput" placeholder="Search" onKeyDown={handleKeyDown} />
         <div className="search-icon" onClick={() => { search() }}>
@@ -95,12 +97,12 @@ function WeatherApp() {
       <div className="weather-image">
         <img src={wicon} alt="" />
       </div>
-      <p className="condition"></p>
-      <div className={`weather-temp ${visible?'':'hidden'}`}>Temp in °C</div>
+      <p className={`condition ${visible ? '' : 'hidden'}`}></p>
+      <div className={`weather-temp ${visible ? '' : 'hidden'}`}>Temp in °C</div>
       <div className="weather-location">Enter A Location</div>
       <div className="data-container">
 
-        <div className={`element ${visible?'':'hidden'}`}>
+        <div className={`element ${visible ? '' : 'hidden'}`}>
           <img src={humidity_icon} alt="" className="icon" />
           <div className="data">
             <div className="humidity-percentage"></div>
@@ -108,7 +110,7 @@ function WeatherApp() {
           </div>
         </div>
 
-        <div className={`element ${visible?'':'hidden'}`}>
+        <div className={`element ${visible ? '' : 'hidden'}`}>
           <img src={wind_icon} alt="" className="icon" />
           <div className="data">
             <div className="wind-rate"></div>
