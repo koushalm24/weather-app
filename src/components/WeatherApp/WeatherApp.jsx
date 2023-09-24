@@ -12,7 +12,7 @@ import wind_icon from '../Assets/wind.png'
 import error_icon from '../Assets/404.png'
 
 function WeatherApp() {
-  let api_key = "ced627980493a6e1ccaf75c7a513610d";
+  let api_key = "";
 
   const [wicon, setWicon] = useState(clear_icon);
   const [visible, setVisible] = useState(false);
